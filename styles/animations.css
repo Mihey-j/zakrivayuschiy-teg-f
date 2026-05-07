@@ -1,19 +1,16 @@
 .like-icon .contour,
 .like-icon .main-body,
 .like-icon .core {
-  transition: fill 0.3s ease;
+  transition: fill 0.5s ease-in-out;
 }
 
 .like-icon .contour {
   transition-delay: 0.06s;
 }
 
-.like-icon .main-body {
-  transition-delay: 0.05s;
-}
-
 .card__icon-button:active .like-icon .core {
   fill: var(--themes-accent-color);
+  transition-delay: 0s;
 }
 
 .card__icon-button:active .like-icon .main-body {
@@ -26,6 +23,7 @@
 
 .card__icon-button:hover .like-icon:not(.is-liked) .core {
   fill: var(--themes-main-color);
+  transition-delay: 0s;
 }
 
 .like-icon .heart {
@@ -49,20 +47,11 @@
 
 .like-icon.is-liked .core {
   fill: var(--themes-accent-color);
+  transition-delay: 0s;
 }
 
 .like-icon.is-liked .main-body {
   fill: var(--themes-accent-color);
-}
-
-@keyframes strelka {
-  0% {
-    transform: translate(-4px);
-  }
-
-  100% {
-    transform: translate(0px);
-  }
 }
 
 @keyframes heartScale {
@@ -80,14 +69,5 @@
   }
   100% {
     fill-opacity: 1;
-  }
-}
-
-@keyframes border {
-  0% {
-    border-bottom: none;
-  }
-  100% {
-    border-bottom: 2px solid var(--themes-main-color);
   }
 }

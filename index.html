@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="light dark" />
     <title>Закрывающий тег</title>
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
     <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
@@ -19,7 +18,8 @@
     <header class="header">
       <div class="header__theme-menu">
         <h1 class="header__title">&lt;/html&gt;</h1>
-        <h2 class="header__title1">закрывающий тег</h2>
+        <p class="closing__teg">закрывающий тег</p>
+
       </div>
     </header>
     <main class="main">
@@ -34,7 +34,7 @@
               src="./images/image.jpg"
               alt="картинка о фургоне"
             />
-            <span class="card__label">&lt;/HTML&gt;</span>
+            <span class="card__label">&lt;/html&gt;</span>
           </div>
           <div class="card">
             <p class="card-text">
@@ -46,7 +46,7 @@
               Место для ваших воспоминаний о начале обучения.
             </p>
             <div class="card-button-section">
-              <button class="card__icon-button">
+              <button class="card__icon-button" aria-hidden="true">
                 <svg
                   class="like-icon"
                   width="39"
@@ -94,7 +94,7 @@
               src="./images/image.jpg"
               alt="картинка о фургоне"
             />
-            <span class="card__label">&lt;/HTML&gt;</span>
+            <span class="card__label">&lt;/html&gt;</span>
           </div>
           <div class="card">
             <p class="card-text">
@@ -109,7 +109,7 @@
               Место для ваших воспоминаний о начале первого спринта.
             </p>
             <div class="card-button-section">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg
                   class="like-icon"
                   width="39"
@@ -157,7 +157,7 @@
               src="./images/image.jpg"
               alt="картинка о фургоне"
             />
-            <span class="card__label">&lt;CSS&gt;</span>
+            <span class="card__label">&lt;/html&gt;</span>
           </div>
           <div class="card">
             <p class="card-text">
@@ -217,7 +217,7 @@
               src="./images/image.jpg"
               alt="картинка о фургоне"
             />
-            <span class="card__label">&lt;desigions&gt;</span>
+            <span class="card__label">&lt;/html&gt;</span>
           </div>
           <div class="card">
             <p class="card-text">
@@ -279,7 +279,7 @@
               src="./images/image.jpg"
               alt="картинка о фургоне"
             />
-            <span class="card__label">care</span>
+            <span class="card__label">&lt;/html&gt;</span>
           </div>
           <div class="card">
             <p class="card-text">
@@ -342,7 +342,7 @@
               src="./images/image.jpg"
               alt="картинка о фургоне"
             />
-            <span class="card__label">&lt;support&gt;</span>
+            <span class="card__label">&lt;/html&gt;</span>
           </div>
           <div class="card">
             <p class="card-text">
@@ -402,7 +402,7 @@
               src="./images/image.jpg"
               alt="картинка о фургоне"
             />
-            <span class="card__label">&lt;lifes style: none;&gt;</span>
+            <span class="card__label">&lt;/html&gt;</span>
           </div>
           <div class="card">
             <p class="card-text">
@@ -464,7 +464,7 @@
               src="./images/image.jpg"
               alt="картинка о фургоне"
             />
-            <span class="card__label">&lt;experience&gt;</span>
+            <span class="card__label">&lt;/html&gt;</span>
           </div>
           <div class="card">
             <p class="card-text">
@@ -522,7 +522,7 @@
         </li>
       </ul>
     </main>
-    <footer class="footer">
+    <div class="footer">
       <div class="footer-button-section">
         <button
           type="button"
@@ -530,32 +530,26 @@
           onclick="window['dialog-id'].showModal()"
           aria-controls="dialog-id"
         >
-          <svg class="icon blend-btn__content">
-            <use href="./svg/floppy.svg#floppy"></use>
-          </svg>
-          <span class="blend-btn__content button__text"
-            >Сохранить на память</span
-          >
+          <img class="icon" src="./svg/floppy.svg"/>
+          <span class="blend-btn__content button__text">Сохранить на память</span>
         </button>
         <dialog class="dialog" id="dialog-id">
           <div class="dialog__button-section">
             <div class="dialog__title">
-              <svg class="dialog__icon blend-btn__content">
-                <use href="./svg/floppy.svg#floppy"></use>
-              </svg>
+              <img class="dialog__icon" src="./svg/floppy.svg"/>
               <p class="dialog__text">
                 вставьте дискету,&nbsp;чтобы продолжить
               </p>
             </div>
             <form method="dialog" class="dialog__form">
               <button class="blend-btn dialog__button" type="submit">
-                <span class="blend-btn__content button__text">OK</span>
+                <span class="blend-btn__content button__text button__ok">ок</span>
               </button>
             </form>
           </div>
         </dialog>
       </div>
-    </footer>
+    </div>
     <script src="./scripts/like.js"></script>
   </body>
 </html>

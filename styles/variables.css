@@ -2,9 +2,8 @@
 :root {
   --font-family: "Inter-Variable", sans-serif;
   --accent-font-family: "Press Start 2P", fantasy;
-  --wght-regular: 400;
-  --wght-medium: 465;
-  --wght-bold: 700;
+  --wght-regular: 410;
+  --wght-bold: 715;
   --themes-background: #fff;
   --themes-main-color: #000;
   --themes-accent-color: #ff0000;
