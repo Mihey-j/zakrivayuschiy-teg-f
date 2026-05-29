@@ -524,17 +524,19 @@
     </main>
     <div class="footer footer-button-section">
       <button class="button blend-btn footer-button" type="button" onclick="window['dialog-id'].showModal()" aria-controls="dialog-id">
-        <svg class="icon" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 19.5V39h39V22.5C39 8.5 38.8 6 37.5 6c-.8 0-1.5-.7-1.5-1.5S35.3 3 34.5 3 33 2.3 33 1.5C33 .2 30.5 0 16.5 0H0zM6 9v6h24V9c0-4.7.3-6 1.5-6 .8 0 1.5.7 1.5 1.5S33.7 6 34.5 6C35.8 6 36 8.3 36 21s-.2 15-1.5 15c-1.2 0-1.5-1.5-1.5-7.5V21H6v7.5c0 6-.3 7.5-1.5 7.5C3.2 36 3 33.5 3 19.5S3.2 3 4.5 3C5.7 3 6 4.3 6 9m15-1.5V12H9V3h12zm6 0c0 3.3-.4 4.5-1.5 4.5S24 10.8 24 7.5 24.4 3 25.5 3 27 4.2 27 7.5M30 30v6H9V24h21z"/>
+        <svg class="icon" width="21" height="21">
+          <use href="./svg/floppy.svg#floppy"></use>  
         </svg>
         <span class="blend-btn__content button__text">Сохранить на память</span>
       </button>
       <dialog class="dialog" id="dialog-id">
         <div class="dialog__button-section">
-          <svg class="dialog__icon" xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
-            <path d="M0 19.5V39h39V22.5C39 8.5 38.8 6 37.5 6c-.8 0-1.5-.7-1.5-1.5S35.3 3 34.5 3 33 2.3 33 1.5C33 .2 30.5 0 16.5 0H0zM6 9v6h24V9c0-4.7.3-6 1.5-6 .8 0 1.5.7 1.5 1.5S33.7 6 34.5 6C35.8 6 36 8.3 36 21s-.2 15-1.5 15c-1.2 0-1.5-1.5-1.5-7.5V21H6v7.5c0 6-.3 7.5-1.5 7.5C3.2 36 3 33.5 3 19.5S3.2 3 4.5 3C5.7 3 6 4.3 6 9m15-1.5V12H9V3h12zm6 0c0 3.3-.4 4.5-1.5 4.5S24 10.8 24 7.5 24.4 3 25.5 3 27 4.2 27 7.5M30 30v6H9V24h21z"/>
-          </svg>
-          <p class="dialog__text">вставьте дискету,&nbsp;чтобы продолжить</p>
+          <div class="dialog__header">
+            <svg class="dialog__icon" width="39" height="39">
+              <use href="./svg/floppy.svg#floppy"></use>  
+            </svg>
+            <p class="dialog__text">вставьте дискету,&nbsp;чтобы продолжить</p>
+          </div>
           <form method="dialog" class="dialog__form">
             <button class=" button blend-btn dialog__button" type="submit">
               <span class="blend-btn__content button__ok">ок</span>
