@@ -272,7 +272,7 @@ button {
   background-color: var(--themes-background);
   border: 2px solid var(--themes-main-color);
   padding: 30px;
-  max-width: 357px; 
+  max-width: 357px;
 }
 
 .dialog::backdrop {
@@ -281,7 +281,6 @@ button {
 
 .dialog__icon {
   flex-shrink: 0;
-  margin-top: 10px;
   height: 39px;
   width: 39px;
 }
