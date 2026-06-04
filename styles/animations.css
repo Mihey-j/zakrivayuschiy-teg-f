@@ -1,7 +1,11 @@
 .like-icon .contour,
 .like-icon .main-body,
 .like-icon .core {
-  transition: fill 0.5s ease-in-out;
+  transition: fill 0.3s linear;
+}
+
+.like-icon .core {
+  transition-delay: 0.03s;
 }
 
 .like-icon .contour {
@@ -15,6 +19,7 @@
 
 .card__icon-button:active .like-icon .main-body {
   fill: var(--themes-accent-color);
+  transition-delay: 0.03s;
 }
 
 .card__icon-button:hover .like-icon:not(.is-liked) .main-body {
@@ -41,7 +46,7 @@
 .like-icon.is-liked .contour {
   fill: var(--themes-accent-color);
   transition-timing-function: linear;
-  transition-delay: 0;
+  transition-delay: 0.06s;
   transition-duration: 0.3s;
 }
 
@@ -52,6 +57,7 @@
 
 .like-icon.is-liked .main-body {
   fill: var(--themes-accent-color);
+  transition-delay: 0.05s;
 }
 
 @keyframes heartScale {
