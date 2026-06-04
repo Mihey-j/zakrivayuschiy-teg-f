@@ -28,13 +28,13 @@
   margin-top: 100px;
 }
 
-button { 
-  background-color: transparent; 
-  border: none; 
-  cursor: pointer; 
-  padding: 0; 
-  margin: 0; 
-} 
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
 
 .button {
   background: var(--themes-background, #fff);
